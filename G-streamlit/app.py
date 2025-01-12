@@ -3,7 +3,7 @@ import os
 from volcenginesdkarkruntime import Ark
 
 # Streamlit 应用标题
-st.title("威少AI助手5")
+st.title("威少AI助手6")
 
 # 从环境变量中获取API密钥
 api_key = os.environ.get("ARK_API_KEY")
@@ -30,7 +30,7 @@ def read_prompts_file(file_path):
         st.error(f"读取文件时发生错误：{e}")
         return ""
 
-system_content = read_prompts_file("c:/Users/Administrator/桌面/G工作/prompts.txt")
+system_content = read_prompts_file(r"C:/Users/Administrator/Desktop/G-streamlit/prompts.txt")
 
 # 将 system content 添加到对话历史中
 conversation_history.append({"role": "system", "content": system_content})
