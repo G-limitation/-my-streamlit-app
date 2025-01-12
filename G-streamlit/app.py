@@ -30,7 +30,7 @@ def read_prompts_file(file_path):
         st.error(f"读取文件时发生错误：{e}")
         return ""
 
-system_content = read_prompts_file("c:/Users/Administrator/Desktop/G工作/prompts.txt")
+system_content = read_prompts_file("c:/Users/Administrator/桌面/G工作/prompts.txt")
 
 # 将 system content 添加到对话历史中
 conversation_history.append({"role": "system", "content": system_content})
